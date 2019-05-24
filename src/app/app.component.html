@@ -3,4 +3,18 @@
   other component will automatically load based on
 based on the router that we're currently at
 -->
-<router-outlet></router-outlet>
+
+<!--
+  choose files to include here based on
+selector component, like app-nav
+which is the file we want to make
+changes too. The name of app-nav is
+found in the nav component .ts file
+as the prop of selector.
+-->
+<app-nav></app-nav>
+
+<section>
+
+  <router-outlet></router-outlet>
+</section>
