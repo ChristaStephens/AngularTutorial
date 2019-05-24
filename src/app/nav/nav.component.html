@@ -1,6 +1,12 @@
 <header>
   <div class="container">
-    <a routerLink="/" class="logo"> apptitle</a>
+    <!--
+      to make the logo dynamic we use double {}
+    we will define it in the nav.component.ts file
+    the {} are like a placeholder and helps to print
+    out data
+   -->
+    <a routerLink="/" class="logo"> {{appTitle }}</a>
     <nav>
       <ul>
         <li><a routerLink ="/">Home</a></li>
