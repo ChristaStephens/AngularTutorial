@@ -1,18 +1,20 @@
 <header>
-  <div class="container">
-    <!--
-      to make the logo dynamic we use double {}
-    we will define it in the nav.component.ts file
-    the {} are like a placeholder and helps to print
-    out data
-   -->
-    <a routerLink="/" class="logo"> {{appTitle }}</a>
-    <nav>
-      <ul>
-        <li><a routerLink ="/">Home</a></li>
-        <li><a routerLink ="/about">About</a></li>
-        <li><a routerLink ="/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <div class="container">
+      <a routerLink="/" class="logo">{{ appTitle }}</a>
+      <nav>
+        <ul>
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="/contact">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+<!--
+  to make the logo dynamic we use double {}
+we will define it in the nav.component.ts file
+the {} are like a placeholder and helps to print
+out data
+-->
