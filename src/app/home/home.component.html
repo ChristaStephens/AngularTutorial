@@ -24,7 +24,15 @@
     to represent a diff CSS class. Properties
     now are classes defined in SCSS
  -->
-<h1 [ngClass]="{
-    'gray': h1Style, 'large': !h1Style
-}">Home</h1>
+
+<!--
+     each line represents a different CSS Class
+     -->
+<!--
+ change inline css through the style
+ "if it's true" = ?
+ "otherwise" = :
+     -->
+<h1 [ngStyle]="{'color': h1Style ? 'gray' : 'limegreen',
+'font-size' : !h1Style ? '1em' : '4em'}">Home</h1>
 <button (click)="firstClick()">Click Me</button>
