@@ -7,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  // when the page loads it won't attach the gray class
+  h1Style: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
-
+  //"this" refers to the h1Style initiated above
   firstClick(){
-    console.log("clicked");
+    this.h1Style = true;
   }
 
 }

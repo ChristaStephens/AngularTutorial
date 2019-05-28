@@ -1,2 +1,28 @@
-<h1>Home</h1>
+<!--
+    style binding or class binding:
+    changes the appearance of ui
+    from the component logic
+    Controls where a CSS class is
+    applied to a given element
+    "<h1 [class.gray]="h1Style">"
+
+    [] are for attribute binding
+    the ".gray" is for reference to
+    a SASS file with a class of gray
+    We want to show it based on a given
+    prop is true of false. Gray will
+    only show if h1Style is true.
+    bool prop. will only show if true
+
+    ng class controls multiple classes
+    on a given element .Gray will
+    only show if h1Style is true.
+    bool prop. will only show if true
+
+    ng class controls multiple classes
+    on a given element. Uses an object
+    to represent a diff CSS class. Properties
+    now are classes defined in SCSS
+ -->
+<h1 [class.gray]="h1Style">Home</h1>
 <button (click)="firstClick()">Click Me</button>
