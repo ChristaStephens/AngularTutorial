@@ -11,7 +11,9 @@ import { DataService } from '../data.service';
 export class HomeComponent implements OnInit {
 
   // when the page loads it won't attach the gray class
-  h1Style: boolean = false;
+  // h1Style: boolean = false;
+
+
 
   //injection of the data service
   constructor(private data: DataService) { }
@@ -19,6 +21,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
   //"this" refers to the h1Style initiated above
+  //helps for communicating with backing, retrieving data
   firstClick(){
     this.data.firstClick();
   }
