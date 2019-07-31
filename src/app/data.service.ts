@@ -11,6 +11,11 @@ export class DataService {
 
   constructor( private http: HttpClient) { }
 
+  // firstClick(){
+  //   return console.log('clicked');
+  // }
+
+  // fake endpoints for testing
   getUsers(){
     return this.http.get('https://reqres.in/api/users')
   }
